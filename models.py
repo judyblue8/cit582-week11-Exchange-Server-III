@@ -1,4 +1,4 @@
-from sqlalchemy.ext.declarative import declarative_base
+rom sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, ForeignKey, Integer, String, Table, Float, DateTime, Enum
 from sqlalchemy.orm import relationship
 from sqlalchemy import create_engine
@@ -43,4 +43,3 @@ class Log(Base):
 
 engine = create_engine('sqlite:///orders.db')
 Base.metadata.create_all(engine)
-
